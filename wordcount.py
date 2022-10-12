@@ -30,9 +30,9 @@ num_list = [] # frequency
 for x,y in charDict.items():
     char_list.append(x)
     num_list.append(y)
-
+    
 fig = plt.figure() # create a new figure
-ax = fig.add_subplot(111) # create a new bar graph within the figure
+ax = fig.add_subplot() # create a new bar graph within the figure
 fig.canvas.manager.set_window_title('The Great Gatsby') # title of window
 ax.bar(char_list, num_list) # add the data to the graph
 plt.savefig('chars.png') # download an image of the bar graph
